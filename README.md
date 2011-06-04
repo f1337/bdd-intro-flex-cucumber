@@ -58,13 +58,46 @@
 
         rake test
 
-4. Manipulate src/Main.Mxml until All the Tests Pass
+    The tests should fail, returning something like:
 
-    Hint: Uncomment some code and change a label attribute.
+        Feature: Personalized Greeting
+          In order to feel special
+          As a site visitor
+          I want to be greeted by name
+
+          Scenario: Greet the visitor
+            When I type "Michael" in the "Name" text field
+              No object found (Melomel::MelomelError)
+              features/personalized_greeting.feature:7:in `When I type "Michael" in the "Name" text field'
+            And I click the "Enter" button
+            Then I should see an alert with the message: "Hello Michael!"
+
+        Failing Scenarios:
+        cucumber features/personalized_greeting.feature:6 # Scenario: Greet the visitor
+
+        1 scenario (1 failed)
+        3 steps (1 failed, 2 skipped)
+
+4. Manipulate src/Main.mxml until All the Tests Pass
+
+    **Hint: Uncomment some code and change a label attribute.** When the tests are passing, you should see something like this:
+
+        Feature: Personalized Greeting
+          In order to feel special
+          As a site visitor
+          I want to be greeted by name
+
+          Scenario: Greet the visitor
+            When I type "Michael" in the "Name" text field
+            And I click the "Enter" button
+            Then I should see an alert with the message: "Hello Michael!"
+
+        1 scenario (1 passed)
+        3 steps (3 passed)
 
 5. Write Additional Scenarios in features/personalized_greeting.feature
 
-    `rake test` and watch them fail, then alter src/Main.xml until they pass. Rinse, repeat.
+    `rake test` and watch them fail, then alter src/Main.mxml until they pass. Rinse, repeat.
 
 6. Add Features by Adding .feature Files in features/
 
