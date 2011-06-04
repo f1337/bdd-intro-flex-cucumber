@@ -6,6 +6,7 @@ require 'selenium-webdriver'
 # using file:// protocol to avoid requiring HTTP server setup
 url = "file://#{Dir.pwd}/bin/Main-test.swf"
 # local path to chromedriver
+# TODO: this lil hack does NOT support chromedriver for linux
 webdriver_path = "./bin/chromedriver_" << ((RUBY_PLATFORM =~ /darwin/).nil? ? "win.exe" : "mac")
 
 Before do |scenario|

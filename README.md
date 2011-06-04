@@ -1,16 +1,18 @@
-# A Quick Introduction to Behavior-Driven-Development for Adobe Flex, Using Cucumber, RSpec, Project Sprouts, Melomel and Selenium. #
+# A Quick Introduction to Behavior-Driven Development for Adobe Flex: #
+
+## Starring Cucumber, RSpec, Project Sprouts, Melomel and Selenium. ##
 
 
 
-## Prerequisites ##
+### Prerequisites ###
 
-### Windows ###
+#### Windows ####
 
 1. [Install RubyInstaller >= 1.9.2](http://rubyinstaller.org/downloads/)
 2. [Install Git](http://code.google.com/p/msysgit/downloads/list?can=3)
 3. [Install Google Chrome](http://google.com/chrome/)
 
-### Mac OS X ###
+#### Mac OS X ####
 
 1. [Install XCode](http://developer.apple.com/xcode/)
 2. [Install Git](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
@@ -40,13 +42,13 @@
 
 
 
-## Quick Start ##
+### Quick Start ###
 
 1. Clone This Github Repository
 
         git clone git://github.com/fantasticmf/bdd-intro-flex-cucumber.git
 
-2. Install Dependencies
+2. Install Dependencies: Cucumber, RSpec, Project Sprouts, Melomel and Selenium
 
         cd bdd-intro-flex-cucumber-melomel
         gem install bundler
