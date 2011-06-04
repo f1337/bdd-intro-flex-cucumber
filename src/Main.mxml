@@ -17,13 +17,13 @@
     <fx:Script>
 
         <![CDATA[
-             import mx.controls.Alert;
+             <!-- import mx.controls.Alert;
 
              private function greetButton_onClick (e:MouseEvent) :void
              {
                  var message:String = "Hello " + myTextInput.text + "!";
                  Alert.show(message);
-             }
+             } -->
          ]]>
 
      </fx:Script>
@@ -36,7 +36,7 @@
         fontSize="180"
     />
 
-    <s:VGroup>
+    <!-- <s:VGroup>
         <s:VGroup>
             <s:Label
                 text="Name"
@@ -48,8 +48,8 @@
         </s:VGroup>
 
         <s:Button
-            label="Enter"
+            label="Submit"
             click="greetButton_onClick(event);"
         />
-    </s:VGroup>
+    </s:VGroup> -->
 </s:Application>
