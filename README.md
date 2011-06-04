@@ -40,7 +40,7 @@
 
 1. Clone This Github Repository
 
-        git clone git://github.com/ninjasandpirates/bdd-intro-flex-cucumber-melomel.git
+        git clone git://github.com/fantasticmf/bdd-intro-flex-cucumber.git
 
 2. Install Dependencies
 
