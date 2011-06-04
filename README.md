@@ -1,4 +1,4 @@
-# A Quick Introduction to Behavior-Driven-Development for Adobe Flex, using Cucumber, RSpec, Project Sprouts, Melomel and Selenium. #
+# A Quick Introduction to Behavior-Driven-Development for Adobe Flex, Using Cucumber, RSpec, Project Sprouts, Melomel and Selenium. #
 
 
 
@@ -52,6 +52,22 @@
         gem install bundler
         bundle install
 
-4. Compile the Application and Run the Tests
+3. Compile the Application and Run the Tests
 
         rake test
+
+4. Manipulate src/Main.Mxml until All the Tests Pass
+
+    Hint: Uncomment some code and change a label attribute.
+
+5. Write Additional Scenarios in features/personalized_greeting.feature
+
+    `rake test` and watch them fail, then alter src/Main.xml until they pass. Rinse, repeat.
+
+6. Add Features by Adding .feature Files in features/
+
+    Use the [Gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin) syntax and [Cucumber Steps for Melomel](http://melomel.info/Cucumber) to write your feature specifications.
+
+7. Pat Yourself on the Back, Sip a Cold Beverage
+
+    You've just learned to write behavior-driven functional tests in a [business-friendly domain-specific language](http://martinfowler.com/bliki/BusinessReadableDSL.html)!
