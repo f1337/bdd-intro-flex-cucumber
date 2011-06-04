@@ -17,21 +17,21 @@ Bundler.require
 # Debug
 
 # Compile the debug swf
-mxmlc "bin/FlexCucumberMelomelIntro-debug.swf" do |t|
-  t.input = "src/FlexCucumberMelomelIntro.mxml"
+mxmlc "bin/Main-debug.swf" do |t|
+  t.input = "src/Main.mxml"
   t.library_path << 'lib/melomel-stub-0.6.7.swc'
   t.debug = true
 end
 
 desc "Compile and run the debug swf"
-flashplayer :debug => "bin/FlexCucumberMelomelIntro-debug.swf"
+flashplayer :debug => "bin/Main-debug.swf"
 
 ##############################
 # Test
 
 # Compile the test swf
-mxmlc "bin/FlexCucumberMelomelIntro-test.swf" do |t|
-  t.input = "src/FlexCucumberMelomelIntro.mxml"
+mxmlc "bin/Main-test.swf" do |t|
+  t.input = "src/Main.mxml"
   t.library_path << 'lib/melomel-0.6.7.swc'
   t.debug = true
 end
@@ -43,7 +43,7 @@ end
 
 
 desc "Compile the test swf and run the Cucumber tests"
-task :test => [ "bin/FlexCucumberMelomelIntro-test.swf", :cucumber ]
+task :test => [ "bin/Main-test.swf", :cucumber ]
 
 task :default => :debug
 

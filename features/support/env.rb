@@ -4,7 +4,7 @@ require 'selenium-webdriver'
 
 # local url to test swf
 # using file:// protocol to avoid requiring HTTP server setup
-url = "file://#{Dir.pwd}/bin/FlexCucumberMelomelIntro-test.swf"
+url = "file://#{Dir.pwd}/bin/Main-test.swf"
 # local path to chromedriver
 webdriver_path = "./bin/chromedriver_" << ((RUBY_PLATFORM =~ /darwin/).nil? ? "win.exe" : "mac")
 
