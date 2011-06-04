@@ -1,2 +1,5 @@
 Gemfile.lock
 chromedriver.log
+bin/FlexCucumberMelomelIntro-test.swf
+bin/FlexCucumberMelomelIntro-debug.swf
+bin/FlexCucumberMelomelIntro.swf
