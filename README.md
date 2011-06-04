@@ -1,4 +1,4 @@
-# A Quick Introduction to BDD for Flex, using Sprouts, Cucumber and Melomel #
+# A Quick Introduction to Behavior-Driven-Development for Adobe Flex, using Cucumber, RSpec, Project Sprouts, Melomel and Selenium. #
 
 
 
@@ -8,12 +8,14 @@
 
 1. [Install RubyInstaller >= 1.9.2](http://rubyinstaller.org/downloads/)
 2. [Install Git](http://code.google.com/p/msysgit/downloads/list?can=3)
+3. [Install Google Chrome](http://google.com/chrome/)
 
 ### Mac OS X ###
 
 1. [Install XCode](http://developer.apple.com/xcode/)
 2. [Install Git](http://code.google.com/p/git-osx-installer/downloads/list?can=3)
-3. Install [RVM (Ruby Version Manager)](https://rvm.beginrescueend.com/):
+3. [Install Google Chrome](http://google.com/chrome/)
+4. Install [RVM (Ruby Version Manager)](https://rvm.beginrescueend.com/):
 
         bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
         echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM function' >> ~/.bash_profile
@@ -22,7 +24,7 @@
 
     If RVM installed correctly, the last command should return "rvm is a function". If it returns "rvm: not found", remove RVM (`rm -rf ~/.rvm`) and reinstall.
 
-4. Install Ruby 1.9.2:
+5. Install Ruby 1.9.2:
 
         rvm install 1.9.2
         rvm use 1.9.2
@@ -30,7 +32,9 @@
 
     If Ruby 1.9.2 installed correctly, the last command should return "ruby 1.9.2...".
 
-5. (Optional) Set the Default Ruby Version
+6. (Optional) Set the Default Ruby Version
+
+    If you don't require other versions of Ruby for existing projects, this will save you from having to `rvm use 1.9.2` before you `rake` this project in a new shell:
 
         rvm --default use 1.9.2
 
@@ -48,6 +52,6 @@
         gem install bundler
         bundle install
 
-4. Compile and Run the Application
+4. Compile the Application and Run the Tests
 
-        rake
+        rake test
